@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/img/C.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendina - Weekly Tasks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <script type="module" crossorigin src="/assets/main-4a463125.js"></script>
+  <link rel="stylesheet" href="/assets/main-81224da0.css">
+</head>
+
+<body class="font-roboto bg-gradient-to-br from-violet-50 to-violet-100 text-slate-800 w-full">
+
+    <!-- Header -->
+    <section
+        class="container mx-auto flex justify-between items-center py-5 px-8 text-4xl w-full border-b-2 border-slate-400 font-grand-hotel font-medium text-custom-1 italic">
+        <h1>Chiara</h1>
+        <div class="group">
+            <i class="fa-regular fa-heart text-3xl group-hover:hidden"></i>
+            <i class="fa-solid fa-heart text-3xl hidden group-hover:block"></i>
+        </div>
+    </section>
+
+    <!-- Weekly Tasks-->
+    <section class="container mx-auto relative px-3 min-h-[47rem]">
+        <h1 class="text-2xl font-semibold text-center py-3"> ~ My Weekly Tasks ~</h1>
+        <ul class="text-xl divide-y-2 ">
+            <li class="task | py-4 ml-4 flex items-center justify-start">
+                <input type="checkbox"
+                    class="appearance-none border-[3px] border-custom-1 bg-white rounded-sm w-5 h-5 mr-3 before:content-['\2713'] before:-translate-y-3 before:-translate-x-1 before:leading-none before:text-4xl before:inline-block before:font-extrabold before:text-black before:scale-0 before:checked:scale-100">
+                <span>Guida Settimanale</span>
+                <button class="absolute right-0">
+                    <i class="text-red-800 fa-trash-can fa-regular mr-5"></i>
+                </button>
+            </li>
+            <li class="task | py-4 ml-4 flex items-center justify-start">
+                <input type="checkbox"
+                    class="appearance-none border-[3px] border-custom-1 bg-white rounded-sm w-5 h-5 mr-3 before:content-['\2713'] before:-translate-y-3 before:-translate-x-1 before:leading-none before:text-4xl before:inline-block before:font-extrabold before:text-black before:scale-0 before:checked:scale-100">
+                <span>Elenco di Analisi</span>
+                <button class="absolute right-0">
+                    <i class="text-red-800 fa-trash-can fa-regular mr-5"></i>
+                </button>
+            </li>
+            <li class="task | py-4 ml-4 flex items-center justify-start">
+                <input type="checkbox"
+                    class="appearance-none border-[3px] border-custom-1 bg-white rounded-sm w-5 h-5 mr-3 before:content-['\2713'] before:-translate-y-3 before:-translate-x-1 before:leading-none before:text-4xl before:inline-block before:font-extrabold before:text-black before:scale-0 before:checked:scale-100">
+                <span>Elenco di Geometria</span>
+                <button class="absolute right-0">
+                    <i class="text-red-800 fa-trash-can fa-regular mr-5"></i>
+                </button>
+            </li>
+            <li class="task | py-4 ml-4 flex items-center justify-start">
+                <input type="checkbox"
+                    class="appearance-none border-[3px] border-custom-1 bg-white rounded-sm w-5 h-5 mr-3 before:content-['\2713'] before:-translate-y-3 before:-translate-x-1 before:leading-none before:text-4xl before:inline-block before:font-extrabold before:text-black before:scale-0 before:checked:scale-100">
+                <span>Elenco di Programmazione</span>
+                <button class="absolute right-0">
+                    <i class="text-red-800 fa-trash-can fa-regular mr-5"></i>
+                </button>
+            </li>
+        </ul>
+        <div class="absolute bottom-3 right-0 gap-2 py-4">
+            <button class="py-2 px-5 bg-custom-1 rounded-md border-2 border-white text-white text-lg"><i
+                    class="fa-solid fa-plus"></i></button>
+            <button class="py-2 px-5 bg-custom-1 rounded-md border-2 border-white text-white text-lg"
+                id="reset-button">Reset</button>
+        </div>
+    </section>
+
+
+    <!-- Menu-->
+    <section
+        class="sticky bottom-0 flex justify-evenly items-center w-full text-slate-400 text-sm font-light bg-violet-50 z-10">
+        <button
+            class="flex-1 data-[active]:text-custom-blue data-[active]:font-semibold py-3 border-t-2 border-slate-300 data-[active]:border-custom-blue data-[active]:border-t-4">
+            <a href="/">
+                <i class="fa-regular fa-calendar text-2xl"></i>
+                <div class="uppercase">Calendar</div>
+            </a>
+        </button>
+        <button
+            class="flex-1 data-[active]:text-custom-blue data-[active]:font-semibold py-3 border-t-2 border-slate-300 data-[active]:border-custom-blue data-[active]:border-t-4"
+            data-active>
+            <a href="#">
+                <i class="fa-solid fa-list text-2xl"></i>
+                <div class="uppercase">Weekly Tasks</div>
+            </a>
+        </button>
+    </section>
+
+    
+</body>
+
+</html>
